@@ -31,14 +31,14 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              ElevatedButton(
-                style: style,
-                onPressed: printFirst,
-                child: const Text("Нажми меня"),
-              ),
               OutlinedButton(
                 style: style,
                 onPressed: () {},
+                child: const Text("Нажми меня"),
+              ),
+              ElevatedButton(
+                style: style,
+                onPressed: printFirst,
                 child: const Text("Нажми меня"),
               ),
               TextButton(
