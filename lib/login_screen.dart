@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class LoginWidget extends StatefulWidget {
+class LoginWidget extends StatelessWidget {
   const LoginWidget({Key? key}) : super(key: key);
 
-  @override
-  State<LoginWidget> createState() => _LoginWidgetState();
-}
-
-class _LoginWidgetState extends State<LoginWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,8 +32,11 @@ class _LoginWidgetState extends State<LoginWidget> {
             Icons.menu,
             size: 30,
           ),
-          title: const Icon(Icons.media_bluetooth_off),
+          title: const Image(
+            image: AssetImage('assets/logo/movie_logo.png'),
+          ),
         ),
+        body: Container(),
       ),
     );
   }
